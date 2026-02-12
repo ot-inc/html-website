@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Cravings Cookies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sweet Cravings</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#Cookies">Cookies</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Freshly Baked Happiness</h2>
+        <p>Hand-made cookies baked daily with love</p>
+        <button onclick="scrollToProducts()">Order Now</button>
+    </section>
+
+    <section id="products">
+        <h2>Our Cookies</h2>
+
+        <div class="card">
+            <div class="card">
+                <img src="images/cookie1.webp" alt="">
+                <h3>Chocolate Chip</h3>
+                <p>R15 each</p>
+                <button onclick="addToCart('Chocolate Chip')">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="images/cookie2.webp" alt="">
+                <h3>Double Chocolate</h3>
+                <p>R18 each</p>
+                <button onclick="addToCart('Double Chocolate')">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="images/cookie3.webp" alt="">
+                <h3>Oatmeal Raisin</h3>
+                <p>R16 each</p>
+                <button onclick="addToCart('Oatmeal Raisin')">Add to cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Sweet Cravings is a home-based cookies business delivering
+            delicious, freshly baked cookies to our local community.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Order & Contact</h2>
+        <p> WhatsApp us to place your order or inquire about more of our products</p>
+        <a class="whatsapp"
+           href="https://wa.me/27822137443"
+           target="_blank">
+           Enquiry or Order on WhatsApp
+        </a>
+
+        <p id="cart"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sweet Cravings Cookies | Built with love using HTML, CSS & JS</p>
+    </footer>
+
+<script src="scipt.js"></script>
+</body>
+</html>
